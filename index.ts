@@ -6,7 +6,7 @@ import { mainConnection } from "./dbConfig";
 
 dotenv.config();
 
-const port = process.env.PORT;
+const port = parseInt(process.env.PORT!);
 const app: Application = express();
 
 app.use(express.json());

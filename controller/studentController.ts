@@ -19,7 +19,7 @@ export const createStudent = async (req: Request, res: Response) => {
     console.log(error);
 
     res.status(404).json({
-      message: "failed to create account",
+      message: "failed to create accountt",
     });
   }
 };
