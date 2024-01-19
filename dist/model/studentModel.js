@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = require("mongoose");
 const studentModel = new mongoose_1.Schema({
-    name: {
+    studentName: {
         type: String,
     },
     email: {
@@ -14,3 +14,4 @@ const studentModel = new mongoose_1.Schema({
 }, {
     timestamps: true,
 });
+exports.default = (0, mongoose_1.model)("students", studentModel);

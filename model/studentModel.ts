@@ -1,11 +1,11 @@
-import { Document, Schema } from "mongoose";
+import { Document, Schema, model } from "mongoose";
 import { iStudent } from "../utils/interface";
 
 interface iData extends iStudent, Document {}
 
 const studentModel = new Schema<iData>(
   {
-    name: {
+    studentName: {
       type: String,
     },
     email: {
@@ -19,3 +19,5 @@ const studentModel = new Schema<iData>(
     timestamps: true,
   }
 );
+
+export default model<iData>("students", studentModel);
