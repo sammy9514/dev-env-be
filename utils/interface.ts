@@ -8,7 +8,7 @@ export interface iError {
 }
 
 export interface iStudent {
-  name: string;
+  studentName: string;
   email: string;
   password: string;
 }
